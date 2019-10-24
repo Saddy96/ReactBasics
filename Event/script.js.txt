@@ -1,0 +1,18 @@
+var Product = React.createClass({
+  buy: function(){
+    alert("You Bought An Android Mobile");
+  },
+  
+    render:function() {
+        return(
+          <div>
+            <p> Android - $ 10</p>
+            <button onClick = {this.buy}>Buy</button>
+          </div>
+            
+        );
+    }
+
+});
+
+React.render(<Product/>, document.getElementById("root"));
